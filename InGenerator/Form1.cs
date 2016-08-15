@@ -27,10 +27,7 @@ namespace InGenerator
             richTextBox.Clear();
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
 
-        }
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
@@ -54,7 +51,11 @@ namespace InGenerator
                 inputText = "";
                 outputText = "";
                 inputText = "";
+                richTextBox.Focus();
+                richTextBox.SelectAll();
             }
         }
+
+
     }
 }

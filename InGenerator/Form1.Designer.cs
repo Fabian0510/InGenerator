@@ -50,7 +50,6 @@
             this.richTextBox.Size = new System.Drawing.Size(260, 375);
             this.richTextBox.TabIndex = 1;
             this.richTextBox.Text = "";
-            this.richTextBox.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // SubmitButton
             // 
@@ -71,7 +70,7 @@
             this.Controls.Add(this.richTextBox);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "SQL IN Generator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
