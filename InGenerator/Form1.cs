@@ -34,20 +34,27 @@ namespace InGenerator
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            string inputText;
-            string outputText;
-            inputText = richTextBox.Text;
-            outputText = "('";
-            inputText = inputText.Replace("\t", "','");
-            inputText = inputText.Replace("\n", "");
-            inputText = inputText.Remove(inputText.Length - 2);
-            outputText = outputText + inputText;
-            outputText = outputText + ")";
-            richTextBox.Clear();
-            richTextBox.Text = outputText;
-            inputText = "";
-            outputText = "";
-            inputText = "";
+            if (richTextBox.Text == "")
+            {
+                richTextBox.Text = "NoDataError";
+            }
+            else
+            {
+                string inputText;
+                string outputText;
+                inputText = richTextBox.Text;
+                outputText = "('";
+                inputText = inputText.Replace("\t", "','");
+                inputText = inputText.Replace("\n", "");
+                inputText = inputText.Remove(inputText.Length - 2);
+                outputText = outputText + inputText;
+                outputText = outputText + ")";
+                richTextBox.Clear();
+                richTextBox.Text = outputText;
+                inputText = "";
+                outputText = "";
+                inputText = "";
+            }
         }
     }
 }
