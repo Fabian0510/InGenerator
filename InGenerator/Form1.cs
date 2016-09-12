@@ -56,6 +56,13 @@ namespace InGenerator
             }
         }
 
-
+        private void copyButton_Click(object sender, EventArgs e)
+        {
+            if (richTextBox.Text != "")
+            {
+                Clipboard.SetText(richTextBox.Text);
+            }
+               
+        }
     }
 }

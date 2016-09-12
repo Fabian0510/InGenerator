@@ -31,6 +31,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.SubmitButton = new System.Windows.Forms.Button();
+            this.copyButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -61,11 +62,22 @@
             this.SubmitButton.UseVisualStyleBackColor = true;
             this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
+            // copyButton
+            // 
+            this.copyButton.Location = new System.Drawing.Point(199, 516);
+            this.copyButton.Name = "copyButton";
+            this.copyButton.Size = new System.Drawing.Size(159, 23);
+            this.copyButton.TabIndex = 3;
+            this.copyButton.Text = "Copy";
+            this.copyButton.UseVisualStyleBackColor = true;
+            this.copyButton.Click += new System.EventHandler(this.copyButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(426, 627);
+            this.Controls.Add(this.copyButton);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.richTextBox);
             this.Controls.Add(this.button1);
@@ -81,6 +93,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox richTextBox;
         private System.Windows.Forms.Button SubmitButton;
+        private System.Windows.Forms.Button copyButton;
     }
 }
 
